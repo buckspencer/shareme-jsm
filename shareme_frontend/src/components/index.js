@@ -1,6 +1,6 @@
 export { default as CreatePin } from "./CreatePin";
 export { default as Feed } from "./Feed";
-export { default as GoogleButton } from "./GoogleButton";
+export { default as GoogleLogin } from "./GoogleLogin";
 export { default as Login } from "./Login";
 export { default as Navbar } from "./Navbar";
 export { default as PinDetail } from "./PinDetail";

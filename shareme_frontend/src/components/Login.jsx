@@ -1,31 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import shareVideo from "../assets/share.mp4";
 import logo from "../assets/logowhite.png";
-
-import { client } from "../client";
-import GoogleButton from "./GoogleButton";
+import GoogleLogin from "./GoogleLogin";
 
 const Login = () => {
-	const navigate = useNavigate();
-
-	const responseGoogle = (response) => {
-		localStorage.setItem("user", JSON.stringify(response.profileObj));
-
-		const { name, googleId, imageUrl } = response.profileObj;
-
-		const doc = {
-			_id: googleId,
-			_type: "user",
-			userName: name,
-			image: imageUrl,
-		};
-
-		client.createIfNotExists(doc).then(() => {
-			navigate("/", { replace: true });
-		});
-	};
-
 	return (
 		<div className="flex justify-start items-center flex-col h-screen">
 			<div className="relative w-full h-full">
@@ -44,7 +22,7 @@ const Login = () => {
 					</div>
 
 					<div className="shadow-2xl pt-3">
-						<GoogleButton />
+						<GoogleLogin />
 					</div>
 				</div>
 			</div>

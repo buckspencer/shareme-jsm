@@ -72,6 +72,7 @@ const Sidebar = ({ user, closeToggle }) => {
 						src={user.image}
 						className="w-10 h-10 rounded-full"
 						alt="user-profile"
+						referrerpolicy="no-referrer"
 					/>
 					<p>{user.userName}</p>
 					<IoIosArrowForward />

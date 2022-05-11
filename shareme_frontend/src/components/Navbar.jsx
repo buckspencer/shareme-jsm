@@ -5,7 +5,6 @@ import { IoMdAdd, IoMdSearch } from "react-icons/io";
 const Navbar = ({ searchTerm, setSearchTerm, user }) => {
 	const navigate = useNavigate();
 	if (!user) return null;
-	console.log(user);
 
 	return (
 		<div className="flex gap-2 md:gap-5 w-full mt-5 pb-7">
@@ -24,8 +23,9 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
 				<Link to={`user-profile/${user?._id}`} className="hidden md-block">
 					<img
 						src={user.image}
-						alt="user-image"
+						alt="user"
 						className="w-14 h-12 rounded-lg"
+						referrerpolicy="no-referrer"
 					/>
 				</Link>
 			</div>
