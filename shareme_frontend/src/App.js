@@ -16,6 +16,7 @@ const App = () => {
     if (!User) {
       navigate("/login");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
