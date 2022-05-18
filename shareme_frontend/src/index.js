@@ -7,8 +7,8 @@ import "./index.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 ReactDOM.render(
-	<Router>
-		<App />
-	</Router>,
-	document.getElementById("root")
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
 );
