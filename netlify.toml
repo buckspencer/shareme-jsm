@@ -1,0 +1,9 @@
+[build]
+  base = "shareme_frontend/"
+  publish = "shareme_frontend/build"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 301
