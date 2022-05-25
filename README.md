@@ -2,6 +2,9 @@
 Pinterest style clone, made from this tutorial. 
 - [Build and Deploy a Modern Full Stack Social Media App](https://www.youtube.com/watch?v=1RHDhtbqo94&amp;t=7045s)
 
+### Deployed Site: 
+![logo](https://user-images.githubusercontent.com/5303892/170368587-8225d231-9a46-479e-b071-500b38d518ec.png)
+- [LINK](https://epicupload.netlify.app/)
 
 ## Stack: 
 - CSS: Tailwind
