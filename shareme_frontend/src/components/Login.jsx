@@ -1,6 +1,6 @@
 import React from "react";
 import shareVideo from "../assets/share.mp4";
-import logo from "../assets/logowhite.png";
+import logo from "../assets/logo.png";
 import GoogleLogin from "./GoogleLogin";
 
 const Login = () => {
